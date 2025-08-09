@@ -1,0 +1,23 @@
+{
+  "name": "mexc-ws-proto",
+  "version": "1.0.0",
+  "description": "MEXC WebSocket protobuf ES6 library",
+  "type": "module",
+  "main": "./index.js",
+  "types": "./index.d.ts",
+  "scripts": {
+    "build": "pbjs --target static-module --wrap es6 --es6 --out index.js src/*.proto && pbts --out index.d.ts index.js"
+  },
+  "keywords": [
+    "protobuf",
+    "mexc",
+    "websocket",
+    "es6"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "devDependencies": {
+    "protobufjs": "^7.5.3",
+    "protobufjs-cli": "^1.2.0"
+  }
+}
